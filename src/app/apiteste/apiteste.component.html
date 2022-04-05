@@ -1,0 +1,15 @@
+<ejs-grid #grid id="grid" [dataSource]="cidades" [editSettings]="editSettings" [toolbar]="toolbar" height="273px">
+    <e-columns>
+        <e-column field='id' headerText='ID' textAlign='Right' isPrimaryKey='true' width=90></e-column>
+        <e-column field='nome' headerText='cidade' textAlign='Right'  [validationRules]='nomeRules' aria-errormessage="Teste" width=90></e-column>
+        <e-column field='estadoDTO.nome' headerText='Estado' width=120></e-column>
+        <e-column field='ibge' headerText='ibge' textAlign='Right' format='C2' width=90></e-column>
+        <e-column field='ibgeInfoDTO.populacaoEstimada' headerText='PopulacaoEstimada' width=120></e-column>
+        <e-column field='ibgeInfoDTO.populacaoEstimadaAno' headerText='PopulacaoEstimadaAno' width=120></e-column>
+        <e-column field='estadoDTO.uf' headerText='PopulacaoEstimadaAno' width=120></e-column>
+        <e-column field='ibgeInfoDTO.ispm' headerText='PopulacaoEstimadaAno' width=120></e-column>
+        <e-column field='ibgeInfoDTO.pib.municipal' headerText='PopulacaoEstimadaAno' width=120></e-column>
+        <e-column field='ibgeInfoDTO.pib.municipalAno' headerText='PopulacaoEstimadaAno' width=120></e-column>
+        <e-column field='ibgeInfoDTO.pib.municipal' headerText='PopulacaoEstimadaAno' width=120></e-column>
+    </e-columns>
+</ejs-grid>
