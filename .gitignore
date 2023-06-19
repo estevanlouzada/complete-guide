@@ -40,3 +40,32 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artifacts
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Cache files
+*.cache
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
